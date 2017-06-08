@@ -23,4 +23,13 @@ def set_kitten_url
 
 end
 
+def secrets
+
+  if params[:magic_word] == "abracadabra"
+  else
+    flash[:alert] = "ACCESS DENIED"
+    redirect_to :welcome
+  end
+end
+
 end
