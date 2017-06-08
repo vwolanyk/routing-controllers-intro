@@ -7,7 +7,8 @@ def welcome
 end
 
 def contest
-@header = "WIN WIN WIN WIN ...maybe lose"
+flash[:notice] = "Sorry ... Contest is Now Closed"
+redirect_to "/welcome"
 end
 
 def kitten
