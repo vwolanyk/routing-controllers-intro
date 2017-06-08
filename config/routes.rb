@@ -8,7 +8,7 @@ get '/welcome' => 'pages#welcome'
 
 get '/contest' => 'pages#contest'
 
-
+get '/kitten/:size' => 'pages#kitten'
 
 
 end
