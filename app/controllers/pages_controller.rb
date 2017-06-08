@@ -6,9 +6,13 @@ def welcome
  @header = "This is the welcome page"
 end
 
+def about
+
+end
+
 def contest
 flash[:notice] = "Sorry ... Contest is Now Closed"
-redirect_to "/welcome"
+redirect_to welcome_path
 end
 
 def kitten
